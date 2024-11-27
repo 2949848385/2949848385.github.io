@@ -1,0 +1,530 @@
+<!DOCTYPE html><html><head>
+      <title>output</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<ul>
+<li><a href="#%E7%BB%AA%E8%AE%BA">绪论</a>
+<ul>
+<li><a href="#%E7%A0%94%E7%A9%B6%E8%83%8C%E6%99%AF%E5%8F%8A%E6%84%8F%E4%B9%89">研究背景及意义</a></li>
+<li><a href="#%E5%9B%BD%E5%86%85%E5%A4%96%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6">国内外研究现状</a>
+<ul>
+<li><a href="#%E5%9B%BD%E5%86%85%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6">国内研究现状</a></li>
+<li><a href="#%E5%9B%BD%E5%A4%96%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6">国外研究现状</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A0%94%E7%A9%B6%E7%9B%AE%E6%A0%87%E4%B8%8E%E5%86%85%E5%AE%B9">研究目标与内容</a></li>
+<li><a href="#%E6%9C%AC%E6%96%87%E7%BB%93%E6%9E%84">本文结构</a></li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B8%8E%E6%8A%80%E6%9C%AF">系统开发环境与技术</a>
+<ul>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">系统开发环境</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF">系统开发技术</a>
+<ul>
+<li><a href="#selenium-%E4%BB%8B%E7%BB%8D">Selenium 介绍</a></li>
+<li><a href="#spring-boot-%E4%BB%8B%E7%BB%8D">Spring Boot 介绍</a></li>
+<li><a href="#mybatis-%E4%BB%8B%E7%BB%8D">MyBatis 介绍</a></li>
+<li><a href="#mysql-%E4%BB%8B%E7%BB%8D">MySQL 介绍</a></li>
+<li><a href="#vuejs-%E4%BB%8B%E7%BB%8D">Vue.js 介绍</a></li>
+<li><a href="#echarts-%E4%BB%8B%E7%BB%8D">ECharts 介绍</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%88%86%E6%9E%90">系统分析</a>
+<ul>
+<li><a href="#%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90">可行性分析</a>
+<ul>
+<li><a href="#%E6%8A%80%E6%9C%AF%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90">技术可行性分析</a></li>
+<li><a href="#%E6%93%8D%E4%BD%9C%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90">操作可行性分析</a></li>
+<li><a href="#%E7%BB%8F%E6%B5%8E%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90">经济可行性分析</a></li>
+<li><a href="#%E7%A4%BE%E4%BC%9A%E5%8F%AF%E8%A1%8C%E6%80%A7%E5%88%86%E6%9E%90">社会可行性分析</a></li>
+</ul>
+</li>
+<li><a href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90">需求分析</a>
+<ul>
+<li><a href="#%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90">功能需求分析</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E7%94%A8%E4%BE%8B%E5%88%86%E6%9E%90">系统用例分析</a></li>
+<li><a href="#%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90">业务流程分析</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90">数据流程分析</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1">系统设计</a>
+<ul>
+<li><a href="#%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1">功能模块设计</a>
+<ul>
+<li><a href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1">数据采集模块设计</a></li>
+<li><a href="#%E5%89%8D%E5%8F%B0%E4%B8%BB%E8%A6%81%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1">前台主要模块设计</a></li>
+</ul>
+</li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1">数据库设计</a>
+<ul>
+<li><a href="#%E5%AE%9E%E4%BD%93%E8%AE%BE%E8%AE%A1">实体设计</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9Fe-r%E5%9B%BE">系统E-R图</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%AE%BE%E8%AE%A1">数据库表设计</a>
+<ul>
+<li><a href="#%E4%B8%93%E8%91%97%E8%A1%A8">专著表</a></li>
+<li><a href="#%E4%BC%9A%E8%AE%AE%E8%AE%BA%E6%96%87%E8%A1%A8">会议论文表</a></li>
+<li><a href="#%E6%9C%9F%E5%88%8A%E8%AE%BA%E6%96%87%E8%A1%A8">期刊论文表</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%AE%9E%E7%8E%B0">系统实现</a>
+<ul>
+<li><a href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%A8%A1%E5%9D%97%E5%AE%9E%E7%8E%B0">数据采集模块实现</a></li>
+<li><a href="#%E5%89%8D%E5%8F%B0%E4%B8%BB%E8%A6%81%E6%A8%A1%E5%9D%97%E5%AE%9E%E7%8E%B0">前台主要模块实现</a>
+<ul>
+<li><a href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E7%AE%A1%E7%90%86%E6%A8%A1%E5%9D%97">数据采集管理模块</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%B1%95%E7%A4%BA%E4%B8%8E%E6%9F%A5%E8%AF%A2%E6%A8%A1%E5%9D%97">数据展示与查询模块</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E6%A8%A1%E5%9D%97">数据可视化模块</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E6%B5%8B%E8%AF%95">系统测试</a>
+<ul>
+<li><a href="#%E6%B5%8B%E8%AF%95%E6%A6%82%E8%BF%B0">测试概述</a></li>
+<li><a href="#%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95">测试方法</a></li>
+<li><a href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B">测试用例</a></li>
+</ul>
+</li>
+<li><a href="#%E6%80%BB%E7%BB%93%E4%B8%8E%E5%B1%95%E6%9C%9B">总结与展望</a>
+<ul>
+<li><a href="#%E6%80%BB%E7%BB%93">总结</a></li>
+<li><a href="#%E5%B1%95%E6%9C%9B">展望</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="绪论">绪论 </h1>
+<h2 id="研究背景及意义">研究背景及意义 </h2>
+<p>自2015年5月起，国家自然科学基金委员会（NSFC）发布了“国家自然科学基金委员会关于受资助项目科研论文实行开放获取的政策声明”。该政策强调科研人员在发表国家自然科学基金资助项目的研究论文时，需将经过同行评议的最终审定稿存储至“国家自然科学基</p>
+<p>金基础研究知识库”，并确保在发表后12个月内实现开放获取。这一举措不仅促进了基础研究成果的共享与传播，还为推动科学技术进步、提升国家创新能力提供了重要支持。</p>
+<p>随着国家自然科学基金资助项目数量的增加，科研成果的产生和发表数量迅速攀升，如何有效地收集、管理和发布这些成果成为一项重要而紧迫的任务。然而，现有的科研数据管理系统难以满足国家自然科学基金项目日益增长的需求。这限制了科研成果的有效传播，影响了科研资源的有效利用。因此，开发一套高效、灵活的数据采集系统显得尤为重要。</p>
+<p>基于Spring Boot的数据采集系统可以为科研人员提供一个直观易用的平台。这不仅有助于实现国家自然科学基金的开放获取政策，还能够提高研究成果的可见度，促进公众对科学研究的关注和理解。系统将实现自动化的数据收集和存储流程，减少科研人员在数据处理中的时间成本，使他们能将更多精力投入到实际研究中。此外，系统可以集成数据分析和可视化工具，为科研管理部门提供实时的数据监测与分析功能，帮助管理人员更好地跟踪项目进展、评估研究成果，支持基于数据的决策制定。</p>
+<p>该系统还将增强研究成果的透明度，使科研活动更具可追溯性，促进科研诚信，减少学术不端行为。公众能够更方便地获取和理解科研成果，增强社会对科学研究的信任。系统的设计与实施将紧密结合国家自然科学基金委员会的政策要求，确保资助项目的成果能够按规定及时、规范地存储和发布。这有助于提高国家自然科学基金的管理水平，提升科研项目的社会影响力。系统还可以支持其他形式的科研成果的存储与共享，推动科研成果的多样化管理，进一步促进基础研究的发展。</p>
+<p>综上所述，基于Spring Boot的国家自然科学基金数据采集系统的开发，不仅符合国家推动科研成果开放获取的政策要求，具有重要的理论和实践意义，还将提升科研成果的管理效率、增强科研透明度、支持科学决策，为科研人员和管理部门提供切实的帮助，推动科学研究的持续进步。</p>
+<h2 id="国内外研究现状">国内外研究现状 </h2>
+<h3 id="国内研究现状">国内研究现状 </h3>
+<p>近年来，国内关于科研成果开放获取与数据管理的研究逐渐增多，反映了科研界对信息透明度和共享的高度重视。国家自然科学基金委员会（NSFC）推出的开放获取政策，要求科研人员在发表国家自然科学基金资助项目的研究论文时，将最终审定稿存储至“国家自然科学基金基础研究知识库”，并确保在发表后12个月内实现开放获取。这一政策的实施，加速了科研成果的传播与应用，提升了科研成果的可见度，促进了学术交流与合作。随着国家对科研成果共享的重视，越来越多的高校和科研机构开始探索建立数据管理平台 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，以满足科研人员对高效数据管理的需求。这些平台集成了数据存储、共享、分析等多种功能，支持科研数据的标准化管理，促进科研数据的有效利用。诸如“中国知网”、“万方数据”的多个科研信息系统发挥了重要作用，提供论文的存储与检索功能，并集成引文分析与影响力评估等工具，帮助科研人员更好地管理和分享研究成果。基础研究知识库的建设也得到了重视，研究者探索如何有效构建和维护知识库，以提升基础研究成果的开放性和可访问性，为学术界提供丰富的数据支持。</p>
+<h3 id="国外研究现状">国外研究现状 </h3>
+<p>与国内相比，国外在科研成果的开放获取与数据管理领域的研究显得更加成熟，特别是在欧美地区。自2000年代初以来，开放获取运动迅速发展，众多国家制定了相关政策，鼓励科研人员在学术期刊上实现开放获取，并将其作为资金资助的条件。例如，美国的“开放数据计划”和英国的数据共享协议，旨在推动科研数据的开放与共享，提高研究的透明度和可重复性。这些政策促进了科研成果的广泛传播，推动了科学研究的可持续发展。多个数据管理和共享平台如Figshare、Zenodo、Dryad等相继建立，为科研人员提供了便捷的数据存储与共享服务。这些平台允许科研人员上传各类研究数据，包括原始数据集、代码、方法学说明等，并为其提供永久的数字对象标识符（DOI），方便引用和访问。这些平台不仅促进了数据的开放获取，也为后续研究提供了丰富的数据基础，提升了科研的透明度和协作效率。</p>
+<p>在国际范围内，不少期刊与组织积极推动科研数据管理规范化，并主持制定了相关技术标准和指南。国际数据管理标准化组织（ISO）和国际数据共享组织（ODI）等机构提出了一系列关于数据管理和共享的最佳实践，为科研人员提供系统化的指导。许多国际顶尖期刊如《自然》、《科学》等在开放获取方面发挥了重要引领作用，推出开放获取选项，促进研究成果的广泛传播。这些期刊为科研人员提供了展示研究成果的平台，推动了科研成果的传播，提升了科研工作的透明度和公信力。</p>
+<p>随着大数据和人工智能技术的迅速发展，各类数据分析和挖掘工具已成为科研人员获取洞察、提升研究效率、支持科学决策的重要手段。这些工具能够帮助科研人员从海量数据中提取有价值的信息，为科研项目的决策和政策制定提供了有力支持。这不仅提高了科研的深度和广度，还推动了学术领域的跨学科合作和知识创新。在研究过程中，数据分析工具的应用可以揭示数据背后的模式和趋势，挖掘潜在的科学问题，从而使科研成果更具指导意义，帮助管理者更有效地评估研究进展与项目影响力。未来的研究将聚焦于进一步优化数据分析方法，使其更好地适应不同科研领域的数据特征。与此同时，随着数据共享和开放获取的不断普及，还应探索如何通过智能化手段提升数据挖掘的精准性和可解释性，从而增强科研工作的透明度与可追溯性，为科研管理和政策制定提供更为全面、科学的支持。</p>
+<h2 id="研究目标与内容">研究目标与内容 </h2>
+<p>在当前科研领域，国家自然科学基金项目的科研成果管理与开放获取面临诸多挑战，尤其是在数据的收集、存储和共享方面。现有系统往往无法满足日益增长的科研成果需求，导致信息传播不畅，资源利用效率低下。为了解决这一问题，本课题将采用多种技术和工具开发一套基于Spring Boot的国家自然科学基金数据采集系统。该系统旨在实现科研成果的高效管理与开放获取，帮助科研人员快速获取所需数据，提升科研透明度和公众参与度。具体研究内容包括：</p>
+<p>（1）深入分析国家自然科学基金数据采集系统的用户需求，明确系统的设计目标，确立功能性和非功能性需求，以确保系统能够有效支持科研人员的数据管理需求。</p>
+<p>（2）对数据采集系统进行详细设计，包括系统的技术架构和功能架构，采用MyBatis进行数据持久化，利用Selenium实现自动化数据采集，并设计MySQL数据库结构，以高效存储和管理科研成果数据。</p>
+<p>（3）实现数据的自动化采集与管理功能，通过定时任务定期从国家自然科学基金相关网站抓取科研成果信息，构建系统化的数据仓库，方便用户进行数据查询和统计分析。</p>
+<p>（4）集成数据分析与可视化模块，利用ECharts实现科研成果的可视化展示，帮助管理人员实时监控科研项目进展，并通过图表分析科研数据的趋势和关联。</p>
+<h2 id="本文结构">本文结构 </h2>
+<p>第一章绪论，本章介绍研究的背景与意义，分析国内外关于科研成果管理与开放获取的研究现状，明确本研究的目标与内容，最后概述论文的组织结构。</p>
+<p>第二章关键技术介绍，本章将重点介绍本系统所采用的关键技术，包括后端开发技术和前端开发技术，并阐述这些技术在系统开发中的重要性和应用。</p>
+<p>第三章可行性分析，本章对系统的可行性进行全面分析，包括技术可行性、经济可行性和操作可行性，评估系统在实施过程中可能遇到的挑战及其解决方案。</p>
+<p>第四章需求分析，本章将详细分析系统的需求，分为功能需求、非功能需求和数据需求，以确保系统设计满足科研人员的实际使用需求。</p>
+<p>第五章系统设计，本章围绕系统的总体架构、功能设计及数据库设计展开，描述系统的整体构架和各模块的具体实现方式，确保系统的可扩展性与高效性。</p>
+<p>第六章系统实现，本章将介绍系统的运行环境、各项具体功能的实现过程以及系统的部署步骤，确保系统能够在实际环境中顺利运行。</p>
+<p>第七章结论与展望，本章总结研究的主要成果与创新点，讨论系统在实际应用中的效果与影响，并展望未来的研究方向和系统的进一步优化。</p>
+<h1 id="系统开发环境与技术">系统开发环境与技术 </h1>
+<h2 id="系统开发环境">系统开发环境 </h2>
+<h2 id="系统开发技术">系统开发技术 </h2>
+<h3 id="selenium-介绍">Selenium 介绍 </h3>
+<p>Selenium是一个功能强大的自动化网页浏览器操作库，最初设计的目的在于进行网页测试。然而，随着网络应用的复杂性增加和数据需求的增长，Selenium的应用逐渐扩展到网页爬虫领域，成为数据采集和自动化操作的重要工具。使用Selenium，我们可以通过编写代码来控制浏览器的行为，实现一系列操作，比如点击按钮、滚动页面。Selenium 提供了多种方法来定位网页元素，包括 ID、名称、类名、CSS 选择器和 XPath。这些定位方法让开发者能够快速而精确地找到需要操作的元素，便于实现复杂的交互。</p>
+<p>与许多传统的爬虫技术相比，Selenium的最大优势在于其处理动态内容的能力。许多现代网页依赖JavaScript动态生成内容，这使得传统的爬虫技术难以获取所需数据。Selenium 通过显示等待和隐式等待机制，可以有效地处理这些动态生成的网页元素，确保在元素加载完成后再进行操作，从而避免因元素尚未渲染而导致的错误。</p>
+<h3 id="spring-boot-介绍">Spring Boot 介绍 </h3>
+<p>在Spring Boot问世之前，Spring Framework需要大量的XML配置，这使得我们在配置Spring特性和解决业务问题之间需要频繁切换思维，导致配置编写占用了大量的时间，从而降低了开发效率。此外，项目的依赖管理也是一项费时费力的工作，我们不仅需要分析要导入哪些库的坐标，还要解决与这些库存在依赖关系的其他库的版本问题。如果依赖版本选择不当，随之而来的不兼容问题会严重影响项目的开发进度。</p>
+<p>为了解决这些问题，Pivotal团队推出了开源框架Spring Boot，旨在简化Spring应用的创建和部署。它提供了丰富的Spring Framework支持，能够帮助开发者快速构建企业级应用。Spring Boot通过自动配置功能减少了复杂性，同时支持多种基于JVM的开源框架，缩短了开发时间，使开发变得更加简单和高效。基于“约定优于配置”的理念，Spring Boot显著减少了我们配置XML文件的时间，使得我们能够专注于业务逻辑的编写，从而显著提高了开发效率并缩短了项目周期。</p>
+<h3 id="mybatis-介绍">MyBatis 介绍 </h3>
+<p>MyBatis是一款出色的持久层框架，支持自定义SQL、存储过程和高级映射。它大大简化了JDBC操作，免去了手动编写参数设置和结果集处理的繁琐代码。通过简单的XML配置或注解，MyBatis能够轻松将原始数据类型、接口和Java POJO映射为数据库中的记录。</p>
+<p>与Spring Framework中的Spring Data JPA相比，MyBatis在处理复杂SQL操作上更具优势，特别是在多表联合查询和存储过程调用等场景下。它还允许我们手动优化SQL语句，以提升查询性能，这对处理大量数据的应用尤为关键。自3.x版本以来，MyBatis引入了注解配置方式，进一步简化了映射关系的配置，使开发更加高效。</p>
+<h3 id="mysql-介绍">MySQL 介绍 </h3>
+<h3 id="vuejs-介绍">Vue.js 介绍 </h3>
+<p>Vue是一款用于构建用户界面的JavaScript框架。它基于标准的HTML、CSS和JavaScript，并额外提供了一套声明式和组件化的编程模型，使我们能够清晰地描述最终输出的HTML与JavaScript状态之间的关系，帮助我们高效地创建用户界面。无论是简单还是复杂的界面，Vue都能胜任。同时，Vue会自动跟踪 JavaScript 状态并在其发生变化时响应式地更新 DOM。</p>
+<p>在传统的前端开发场景下，如果我们想将数据渲染到页面上，需要进行频繁的DOM操作才能达到想要的效果。而作为基于MVVM架构的渐进式框架，Vue.js简化了用户界面与业务逻辑之间的依赖关系，解决了数据频繁更新的问题。MVVM模式有助于将应用程序的业务和表示逻辑与用户界面清晰分离。保持应用程序逻辑和UI之间的清晰分离有助于解决许多开发问题，并使应用程序更易于测试、维护和演变。它还可以显著提高代码重用机会，并允许开发人员和UI设计人员在开发应用各自的部分时更轻松地进行协作。</p>
+<h3 id="echarts-介绍">ECharts 介绍 </h3>
+<p>ECharts是一款纯JavaScript实现的可视化库，兼容绝大部分浏览器，提供了直观、生动、可交互、可高度个性化定制的数据可视化图表。数据可视化是指将数据以图形图像形式表示，以此来挖掘其中未知的信息。数据可视化可以帮助我们解释数据模式、趋势、统计数据和数据相关性，而这些内容在其他呈现方式下可能难以被发现。</p>
+<h1 id="系统分析">系统分析 </h1>
+<h2 id="可行性分析">可行性分析 </h2>
+<h3 id="技术可行性分析">技术可行性分析 </h3>
+<p>当前的技术环境为本课题提供了坚实的基础。Spring Boot 作为一种轻量级的Java开发框架，通过模块化设计和自动配置功能简化了开发流程。这不仅提升了系统开发效率，还为系统的扩展性和维护性提供了保障，使得后续功能的添加与调整变得更加便捷。MyBatis 作为持久层框架，具有高效的数据库操作能力，尤其适用于处理复杂SQL查询和大规模科研数据存储。其灵活的映射机制确保了数据的准确性和访问性能，为系统的稳定运行打下了坚实的基础。Selenium 通过自动化浏览器操作，有效应对现代网页动态内容抓取的问题，使得科研数据的采集更加精准和高效。其强大的元素定位功能和等待机制能够处理JavaScript生成的动态内容，确保系统能够实时获取最新的科研成果信息。Vue.js 与 ElementUI 的结合，为系统前端提供了灵活的界面设计，使用户能够方便地进行数据操作和交互。Vue.js 的组件化结构不仅提高了开发效率，也使得系统的维护与扩展变得更加容易。ECharts 的数据可视化功能能够清晰展现科研数据的趋势与关联，为管理人员的决策提供数据支持，增强了系统的实用性和用户体验。</p>
+<p>综合以上因素，从技术角度看，开发一个基于Spring Boot的国家自然科学基金数据采集系统是完全可行的。这一系统将能够高效地支持科研成果的管理与开放获取，推动科研工作的透明度与可追溯性。</p>
+<h3 id="操作可行性分析">操作可行性分析 </h3>
+<p>在操作可行性分析中，我们需要评估基于Spring Boot的国家自然科学基金数据采集系统在日常运维和使用过程中的操作性，包括系统的易用性、可维护性和安全性等方面。该系统面向科研人员和科研管理部门，设计了简洁、直观的操作界面，使用户能够轻松进行数据采集、存储、管理和查询。前端采用Vue.js和ElementUI结合实现，确保了交互界面的友好性与响应速度，并通过ECharts实现数据可视化，帮助用户快速理解和分析数据趋势。系统设计避免了复杂的配置，用户可通过简单指引快速上手，减少了学习成本，提升了可操作性。</p>
+<p>后端基于Spring Boot和MyBatis构建，具有良好的模块化特性，功能模块间解耦性高，便于后续扩展和更新。系统采用分层架构，并使用Selenium进行网页动态内容抓取，数据采集过程通过定时任务自动执行，减少了人工干预。在数据库设计上，系统使用MySQL数据库，合理的索引设计与数据结构确保了查询效率和存储的扩展性。同时，MyBatis简化了数据持久化操作，便于系统维护。系统文档将详细记录各模块的功能与接口，方便开发和运维人员后续维护工作。</p>
+<p>为保证数据的安全性，系统引入了用户认证和权限控制机制，确保只有授权用户才能访问和操作数据。通过数据加密和网络通信加密（如HTTPS），保障了数据传输安全。系统还包括数据备份和恢复机制，以应对数据丢失或灾难恢复需求。Selenium自动化操作遵循国家自然科学基金相关网站的访问规则，避免因频繁访问导致的安全问题或IP封禁风险。</p>
+<p>系统基于Spring Boot开发，具有良好的跨平台兼容性，能够在多种操作系统上顺利运行，且对硬件配置需求相对较低。系统支持模块化扩展，未来可在数据采集功能中引入更高效的爬虫技术或在数据分析模块中增加高级机器学习算法，进一步提升智能化水平。</p>
+<h3 id="经济可行性分析">经济可行性分析 </h3>
+<p>在经济可行性方面，开发和维护基于Spring Boot的国家自然科学基金数据采集系统确实需要一定的初期投资，包括软硬件资源、人力资源等。然考虑到该系统在科研数据管理和开放获取方面的潜在价值，这些成本是合理的。随着国家自然科学基金政策的推动，科研成果的开放获取将促进学术交流与合作，提升科研项目的社会影响力，从而为科研人员和管理部门提供更高效的数据管理工具。</p>
+<p>该系统能够显著提高科研人员在数据采集、存储和共享过程中的效率，使他们能够更专注于核心研究工作。随着科研数据需求的增加，系统所提供的数据分析与可视化功能将有助于科研管理部门实时监控项目进展，支持基于数据的决策制定。这有助于提升科研成果的可见度，为科研单位和相关机构提供更准确的决策支持，进一步提高资源的有效利用率。</p>
+<p>值得一提的是，该系统还可以探索商业化运作的机会，比如提供数据分析咨询服务、定制化解决方案等，从而为项目的持续发展提供经济支持。通过与高校、科研机构以及政府部门的合作，该系统有望创造更多的经济价值，实现可持续发展。因此，从长远来看，基于Spring Boot的国家自然科学基金数据采集系统的经济投资是可行的，预期回报率高，具有良好的市场前景。</p>
+<h3 id="社会可行性分析">社会可行性分析 </h3>
+<p>从社会可行性角度分析，随着国家自然科学基金委员会推动科研成果开放获取的政策不断深入，科研数据的透明度与共享程度正日益受到重视。在这一背景下，基于Spring Boot的国家自然科学基金数据采集系统的开发，不仅能提高科研成果的可见度，还能够有效促进学术交流与合作，增强科研人员与社会公众之间的信任关系。</p>
+<p>该系统为科研人员提供了一个高效、便捷的数据管理平台，使他们能够快速获取、存储和分析科研数据，从而提高研究效率。这种高效的数据管理方式将有助于科研成果的及时发布，加强科研活动的透明度，有利于建立良好的科研生态，降低学术不端行为的发生。</p>
+<p>随着科研成果的开放共享，公众对科学研究的认知将进一步提升。这一系统能够帮助非专业人士更好地理解科研成果，促进科学知识的传播和应用，增强社会对科学研究的关注度和信任度。通过将科研成果与社会需求结合，该系统还将助力推动国家创新能力的提升。</p>
+<p>因此，从社会发展与科研文化建设的角度来看，基于Spring Boot的国家自然科学基金数据采集系统的研究与实施不仅具有重要的社会意义，也将为推动科学研究的持续进步与社会发展做出积极贡献。</p>
+<h2 id="需求分析">需求分析 </h2>
+<h3 id="功能需求分析">功能需求分析 </h3>
+<p>本系统采用了B/S架构，用户可以通过浏览器作为客户端与服务器交互。用户在浏览器上进行操作时，会触发浏览器向服务器发送请求。服务器接收到请求后，进行数据处理并返回相应的数据给浏览器。浏览器在接收数据后会将结果进行渲染并展示给用户。<br>
+B/S架构的使用不仅提升了系统的数据管理效率和用户体验，而且显著降低了系统的维护成本，增强了系统的稳定性和安全性，为国家自然科学基金数据采集系统的持续发展提供了稳固的技术支持。其B/S架构如图3.1所示：</p>
+<p><a href="https://mermaid.live/edit#pako:eNqrVkrOT0lVslJSAIK0nPzy5IzEohIFn6CYPAUwcIyOUXq2tf_F8o6nM1fEKMXCxJ1A4nN6n3YtRBV3BolP3fCsd93TXZORxB0VdHU9QkICdHXtFJyA7GeTe5_snQNRCRJzhhsAklzc8HzLIoQkSEOQa3BIWmkOiOuopKOUm1qUm5iZAnR5NUhnjFJJRmpuaoySFZCZkpqWWJpTEqMUk1cLVJpYWpIfXJmXrGRVUlSaqqNUlF-anqFklZaYUwzklRakJJakumQmphcl5sJFCxLzovLzEfzUlMyS_CJfSFiBg6wWAJ6DcO4"><img src="https://mermaid.ink/img/pako:eNqrVkrOT0lVslJSAIK0nPzy5IzEohIFn6CYPAUwcIyOUXq2tf_F8o6nM1fEKMXCxJ1A4nN6n3YtRBV3BolP3fCsd93TXZORxB0VdHU9QkICdHXtFJyA7GeTe5_snQNRCRJzhhsAklzc8HzLIoQkSEOQa3BIWmkOiOuopKOUm1qUm5iZAnR5NUhnjFJJRmpuaoySFZCZkpqWWJpTEqMUk1cLVJpYWpIfXJmXrGRVUlSaqqNUlF-anqFklZaYUwzklRakJJakumQmphcl5sJFCxLzovLzEfzUlMyS_CJfSFiBg6wWAJ6DcO4?type=png" alt=""></a></p>
+<p>该系统主要功能如下：<br>
+（1）数据采集：系统需支持自动化数据采集功能，定期从国家自然科学基金相关网站抓取科研成果信息。通过Selenium技术实现自动化浏览器操作，能够动态获取基金项目的最新信息并存储在数据库中。该模块应支持定时任务的配置，确保数据采集过程能够定时运行，保持数据的实时性。<br>
+（2）数据存储与管理：系统需要支持科研数据的存储和管理，采用MySQL数据库进行数据持久化存储。通过MyBatis框架实现数据库操作，系统能够高效处理大量科研成果数据，并支持数据的分类、标签化管理。科研数据的管理功能还包括数据的增删改查操作，以便用户根据需求对数据进行自定义管理。<br>
+（3）数据查询与检索：系统应具备强大的数据查询与检索功能，支持用户按条件筛选数据，如按时间、研究领域、项目类型等方式进行筛选。该模块应提供灵活的查询接口，方便科研人员快速找到所需数据，提升数据的可访问性和利用效率。<br>
+（4）数据分析与可视化：系统需要提供数据分析与可视化功能，集成ECharts实现科研成果的可视化展示。该模块应能够通过折线图、柱状图、饼图等多种图表展示科研项目的数量、进展、领域分布等数据，帮助科研管理人员掌握科研动态，进行趋势分析，并做出基于数据的决策。</p>
+<h3 id="系统用例分析">系统用例分析 </h3>
+<p>国家自然科学基金数据采集系统包含数据采集、数据存储与管理、数据查询与检索、数据分析与可视化等模块。系统用例图如图3.2所示</p>
+<h3 id="业务流程分析">业务流程分析 </h3>
+<h3 id="数据流程分析">数据流程分析 </h3>
+<h1 id="系统设计">系统设计 </h1>
+<h2 id="功能模块设计">功能模块设计 </h2>
+<h3 id="数据采集模块设计">数据采集模块设计 </h3>
+<h3 id="前台主要模块设计">前台主要模块设计 </h3>
+<h2 id="数据库设计">数据库设计 </h2>
+<p>数据库（Database）是一个按照固定的数据结构对数据进行存储、管理和访问的系统。它能高效地存储、检索、修改和管理大量的信息。</p>
+<h3 id="实体设计">实体设计 </h3>
+<p>本系统使用了多个实体，每个实体含有多个属性。通过实体关系梳理，我们得到了以下实体关系图。由于篇幅有限，部分属性未全部罗列。</p>
+<h3 id="系统e-r图">系统E-R图 </h3>
+<h3 id="数据库表设计">数据库表设计 </h3>
+<p>| 奖励id | Award_ID | bigint | 主键 |<br>
+| 奖励名称 | Book_name | varchar |  |<br>
+| 作者 | Author | varchar |  |<br>
+| 授奖机构 | Award_Agency | varchar |  |<br>
+| 获奖日期 | Award_Date | datetime |  |<br>
+| 浏览次数 | Views | int |  |<br>
+| 奖励类型 | Award_Type | varchar |  |<br>
+| 授奖等级 | Award_Level | varchar |  |<br>
+| 学术检索 | Academic_Index | varchar |  |<br>
+| 所属项目id | Project_ID | varchar |  |</p>
+<h4 id="专著表">专著表 </h4>
+<p>该表主要用于存储专著信息，包含专著名称、作者、出版社、发表日期、浏览次数、语言、国家、页数范围和学术检索。</p>
+<p><strong>表 5.6 专著表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>专著id</td>
+<td>Book_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>专著名称</td>
+<td>Book_name</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>作者</td>
+<td>Author</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>出版社</td>
+<td>Publisher</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>发表日期</td>
+<td>Publication_Date</td>
+<td>datetime</td>
+<td></td>
+</tr>
+<tr>
+<td>浏览次数</td>
+<td>Views</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>语言</td>
+<td>Language</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>国家</td>
+<td>Country</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>页数范围</td>
+<td>Page_Range</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>学术检索</td>
+<td>Academic_Index</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>所属项目id</td>
+<td>Project_ID</td>
+<td>varchar</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="会议论文表">会议论文表 </h4>
+<p>该表主要用于存储会议论文信息，包含专著名称、作者、出版社、发表日期、浏览次数、语言、国家、页数范围和学术检索。</p>
+<p><strong>表 5.7 会议论文表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>会议论文id</td>
+<td>Conference_Paper_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>会议论文名称</td>
+<td>Conference_Paper_Name</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>作者</td>
+<td>Author</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>会议名称</td>
+<td>Conference_Name</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>发表日期</td>
+<td>Publication_Date</td>
+<td>datetime</td>
+<td></td>
+</tr>
+<tr>
+<td>浏览次数</td>
+<td>Views</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>是否OA</td>
+<td>Enable_OA</td>
+<td>boolean</td>
+<td>是否开放获取</td>
+</tr>
+<tr>
+<td>下载地址</td>
+<td>Download_link</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>下载次数</td>
+<td>Downloads</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>学术检索</td>
+<td>Academic_Index</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>所属项目id</td>
+<td>Project_ID</td>
+<td>varchar</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="期刊论文表">期刊论文表 </h4>
+<p>该表主要用于存储期刊论文信息，包含期刊论文名称、作者、doi、收录情况、期刊名称、卷、发表日期、浏览次数、下载次数、所属学部、基金项目和学术检索。</p>
+<p><strong>表 5.8 期刊论文表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>期刊论文id</td>
+<td>Journal_Paper_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>期刊论文名称</td>
+<td>Journal_Paper_Name</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>作者</td>
+<td>Author</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>doi</td>
+<td>DOI</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>收录情况</td>
+<td>Inclusion_Status</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>期刊名称</td>
+<td>Journal_Name</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>卷</td>
+<td>Volume</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>发表日期</td>
+<td>Publication_Date</td>
+<td>datetime</td>
+<td></td>
+</tr>
+<tr>
+<td>浏览次数</td>
+<td>Views</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>下载次数</td>
+<td>Downloads</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>所属学部</td>
+<td>Academic_Division</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>基金项目</td>
+<td>Funding_Project</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>是否OA</td>
+<td>Enable_OA</td>
+<td>boolean</td>
+<td>是否开放获取</td>
+</tr>
+<tr>
+<td>下载地址</td>
+<td>Download_link</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>学术检索</td>
+<td>Academic_Index</td>
+<td>varchar</td>
+<td></td>
+</tr>
+<tr>
+<td>所属项目id</td>
+<td>Project_ID</td>
+<td>varchar</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="系统实现">系统实现 </h1>
+<h2 id="数据采集模块实现">数据采集模块实现 </h2>
+<h2 id="前台主要模块实现">前台主要模块实现 </h2>
+<h3 id="数据采集管理模块">数据采集管理模块 </h3>
+<h3 id="数据展示与查询模块">数据展示与查询模块 </h3>
+<h3 id="数据可视化模块">数据可视化模块 </h3>
+<h1 id="系统测试">系统测试 </h1>
+<h2 id="测试概述">测试概述 </h2>
+<h2 id="测试方法">测试方法 </h2>
+<h2 id="测试用例">测试用例 </h2>
+<h1 id="总结与展望">总结与展望 </h1>
+<h2 id="总结">总结 </h2>
+<h2 id="展望">展望 </h2>
+<p><strong>参 考 文 献</strong></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>王剑斌,陈博.基于数据驱动的高校科研管理系统建设与升级路径 J.浙江工业大学学报(社会科学版),2024,23(02):178-18 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
