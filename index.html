@@ -1,9 +1,9 @@
 <!DOCTYPE html><html><head>
-      <title>output</title>
+      <title>index</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
       
       
       
@@ -40,7 +40,12 @@
 </li>
 <li><a href="#%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B8%8E%E6%8A%80%E6%9C%AF">系统开发环境与技术</a>
 <ul>
-<li><a href="#%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">系统开发环境</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83">系统开发环境</a>
+<ul>
+<li><a href="#%E7%A1%AC%E4%BB%B6%E7%8E%AF%E5%A2%83">硬件环境</a></li>
+<li><a href="#%E8%BD%AF%E4%BB%B6%E7%8E%AF%E5%A2%83">软件环境</a></li>
+</ul>
+</li>
 <li><a href="#%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91%E6%8A%80%E6%9C%AF">系统开发技术</a>
 <ul>
 <li><a href="#selenium-%E4%BB%8B%E7%BB%8D">Selenium 介绍</a></li>
@@ -66,15 +71,24 @@
 <li><a href="#%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90">需求分析</a>
 <ul>
 <li><a href="#%E5%8A%9F%E8%83%BD%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90">功能需求分析</a></li>
-<li><a href="#%E7%B3%BB%E7%BB%9F%E7%94%A8%E4%BE%8B%E5%88%86%E6%9E%90">系统用例分析</a></li>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E7%94%A8%E4%BE%8B%E5%88%86%E6%9E%90">系统用例分析</a>
+<ul>
+<li><a href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E5%8A%9F%E8%83%BD">数据采集功能</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E7%AE%A1%E7%90%86%E5%8A%9F%E8%83%BD">数据存储与管理功能</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E6%9F%A5%E8%AF%A2%E4%B8%8E%E6%A3%80%E7%B4%A2%E5%8A%9F%E8%83%BD">数据查询与检索功能</a></li>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E5%8F%AF%E8%A7%86%E5%8C%96%E5%8A%9F%E8%83%BD">数据分析与可视化功能</a></li>
+</ul>
+</li>
 <li><a href="#%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90">业务流程分析</a></li>
 <li><a href="#%E6%95%B0%E6%8D%AE%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90">数据流程分析</a></li>
+<li><a href="#%E9%9D%9E%E5%8A%9F%E8%83%BD%E6%80%A7%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90">非功能性需求分析</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1">系统设计</a>
 <ul>
+<li><a href="#%E7%B3%BB%E7%BB%9F%E6%95%B4%E4%BD%93%E8%AE%BE%E8%AE%A1">系统整体设计</a></li>
 <li><a href="#%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1">功能模块设计</a>
 <ul>
 <li><a href="#%E6%95%B0%E6%8D%AE%E9%87%87%E9%9B%86%E6%A8%A1%E5%9D%97%E8%AE%BE%E8%AE%A1">数据采集模块设计</a></li>
@@ -87,6 +101,11 @@
 <li><a href="#%E7%B3%BB%E7%BB%9Fe-r%E5%9B%BE">系统E-R图</a></li>
 <li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93%E8%A1%A8%E8%AE%BE%E8%AE%A1">数据库表设计</a>
 <ul>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E8%A1%A8">项目表</a></li>
+<li><a href="#%E4%BA%BA%E5%91%98%E8%A1%A8">人员表</a></li>
+<li><a href="#%E9%A1%B9%E7%9B%AE-%E4%BA%BA%E5%91%98%E8%A1%A8">项目-人员表</a></li>
+<li><a href="#%E4%B8%93%E5%88%A9%E8%A1%A8">专利表</a></li>
+<li><a href="#%E5%A5%96%E5%8A%B1%E8%A1%A8">奖励表</a></li>
 <li><a href="#%E4%B8%93%E8%91%97%E8%A1%A8">专著表</a></li>
 <li><a href="#%E4%BC%9A%E8%AE%AE%E8%AE%BA%E6%96%87%E8%A1%A8">会议论文表</a></li>
 <li><a href="#%E6%9C%9F%E5%88%8A%E8%AE%BA%E6%96%87%E8%A1%A8">期刊论文表</a></li>
@@ -110,7 +129,7 @@
 </li>
 <li><a href="#%E7%B3%BB%E7%BB%9F%E6%B5%8B%E8%AF%95">系统测试</a>
 <ul>
-<li><a href="#%E6%B5%8B%E8%AF%95%E6%A6%82%E8%BF%B0">测试概述</a></li>
+<li><a href="#%E6%B5%8B%E8%AF%95%E6%A6%82%E8%BF%B011">测试概述11</a></li>
 <li><a href="#%E6%B5%8B%E8%AF%95%E6%96%B9%E6%B3%95">测试方法</a></li>
 <li><a href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B">测试用例</a></li>
 </ul>
@@ -124,8 +143,7 @@
 </ul>
 <h1 id="绪论">绪论 </h1>
 <h2 id="研究背景及意义">研究背景及意义 </h2>
-<p>自2015年5月起，国家自然科学基金委员会（NSFC）发布了“国家自然科学基金委员会关于受资助项目科研论文实行开放获取的政策声明”。该政策强调科研人员在发表国家自然科学基金资助项目的研究论文时，需将经过同行评议的最终审定稿存储至“国家自然科学基</p>
-<p>金基础研究知识库”，并确保在发表后12个月内实现开放获取。这一举措不仅促进了基础研究成果的共享与传播，还为推动科学技术进步、提升国家创新能力提供了重要支持。</p>
+<p>自2015年5月起，国家自然科学基金委员会（NSFC）发布了“国家自然科学基金委员会关于受资助项目科研论文实行开放获取的政策声明”。该政策强调科研人员在发表国家自然科学基金资助项目的研究论文时，需将经过同行评议的最终审定稿存储至“国家自然科学基金基础研究知识库”，并确保在发表后12个月内实现开放获取。这一举措不仅促进了基础研究成果的共享与传播，还为推动科学技术进步、提升国家创新能力提供了重要支持。</p>
 <p>随着国家自然科学基金资助项目数量的增加，科研成果的产生和发表数量迅速攀升，如何有效地收集、管理和发布这些成果成为一项重要而紧迫的任务。然而，现有的科研数据管理系统难以满足国家自然科学基金项目日益增长的需求。这限制了科研成果的有效传播，影响了科研资源的有效利用。因此，开发一套高效、灵活的数据采集系统显得尤为重要。</p>
 <p>基于Spring Boot的数据采集系统可以为科研人员提供一个直观易用的平台。这不仅有助于实现国家自然科学基金的开放获取政策，还能够提高研究成果的可见度，促进公众对科学研究的关注和理解。系统将实现自动化的数据收集和存储流程，减少科研人员在数据处理中的时间成本，使他们能将更多精力投入到实际研究中。此外，系统可以集成数据分析和可视化工具，为科研管理部门提供实时的数据监测与分析功能，帮助管理人员更好地跟踪项目进展、评估研究成果，支持基于数据的决策制定。</p>
 <p>该系统还将增强研究成果的透明度，使科研活动更具可追溯性，促进科研诚信，减少学术不端行为。公众能够更方便地获取和理解科研成果，增强社会对科学研究的信任。系统的设计与实施将紧密结合国家自然科学基金委员会的政策要求，确保资助项目的成果能够按规定及时、规范地存储和发布。这有助于提高国家自然科学基金的管理水平，提升科研项目的社会影响力。系统还可以支持其他形式的科研成果的存储与共享，推动科研成果的多样化管理，进一步促进基础研究的发展。</p>
@@ -153,17 +171,20 @@
 <p>第七章结论与展望，本章总结研究的主要成果与创新点，讨论系统在实际应用中的效果与影响，并展望未来的研究方向和系统的进一步优化。</p>
 <h1 id="系统开发环境与技术">系统开发环境与技术 </h1>
 <h2 id="系统开发环境">系统开发环境 </h2>
+<h3 id="硬件环境">硬件环境 </h3>
+<h3 id="软件环境">软件环境 </h3>
 <h2 id="系统开发技术">系统开发技术 </h2>
 <h3 id="selenium-介绍">Selenium 介绍 </h3>
-<p>Selenium是一个功能强大的自动化网页浏览器操作库，最初设计的目的在于进行网页测试。然而，随着网络应用的复杂性增加和数据需求的增长，Selenium的应用逐渐扩展到网页爬虫领域，成为数据采集和自动化操作的重要工具。使用Selenium，我们可以通过编写代码来控制浏览器的行为，实现一系列操作，比如点击按钮、滚动页面。Selenium 提供了多种方法来定位网页元素，包括 ID、名称、类名、CSS 选择器和 XPath。这些定位方法让开发者能够快速而精确地找到需要操作的元素，便于实现复杂的交互。</p>
-<p>与许多传统的爬虫技术相比，Selenium的最大优势在于其处理动态内容的能力。许多现代网页依赖JavaScript动态生成内容，这使得传统的爬虫技术难以获取所需数据。Selenium 通过显示等待和隐式等待机制，可以有效地处理这些动态生成的网页元素，确保在元素加载完成后再进行操作，从而避免因元素尚未渲染而导致的错误。</p>
+<p>Selenium 是一个功能强大的自动化网页浏览器操作库，最初设计的目的在于进行网页测试。然而，随着网络应用的复杂性增加和数据需求的增长，Selenium 的应用逐渐扩展到网页爬虫领域，成为数据采集和自动化操作的重要工具。使用 Selenium，我们可以通过编写代码来控制浏览器的行为，实现一系列操作，比如点击按钮、滚动页面。Selenium 提供了多种方法来定位网页元素，包括 ID、名称、类名、CSS 选择器和 XPath。这些定位方法让开发者能够快速而精确地找到需要操作的元素，便于实现复杂的交互。</p>
+<p>与许多传统的爬虫技术相比，Selenium 的最大优势在于其处理动态内容的能力。许多现代网页依赖 JavaScript 动态生成内容，这使得传统的爬虫技术难以获取所需数据。Selenium 通过显示等待和隐式等待机制，可以有效地处理这些动态生成的网页元素，确保在元素加载完成后再进行操作，从而避免因元素尚未渲染而导致的错误。</p>
 <h3 id="spring-boot-介绍">Spring Boot 介绍 </h3>
-<p>在Spring Boot问世之前，Spring Framework需要大量的XML配置，这使得我们在配置Spring特性和解决业务问题之间需要频繁切换思维，导致配置编写占用了大量的时间，从而降低了开发效率。此外，项目的依赖管理也是一项费时费力的工作，我们不仅需要分析要导入哪些库的坐标，还要解决与这些库存在依赖关系的其他库的版本问题。如果依赖版本选择不当，随之而来的不兼容问题会严重影响项目的开发进度。</p>
-<p>为了解决这些问题，Pivotal团队推出了开源框架Spring Boot，旨在简化Spring应用的创建和部署。它提供了丰富的Spring Framework支持，能够帮助开发者快速构建企业级应用。Spring Boot通过自动配置功能减少了复杂性，同时支持多种基于JVM的开源框架，缩短了开发时间，使开发变得更加简单和高效。基于“约定优于配置”的理念，Spring Boot显著减少了我们配置XML文件的时间，使得我们能够专注于业务逻辑的编写，从而显著提高了开发效率并缩短了项目周期。</p>
+<p>在 Spring Boot 问世之前，Spring Framework 需要大量的XML配置，这使得我们在配置 Spring 特性和解决业务问题之间需要频繁切换思维，导致配置编写占用了大量的时间，从而降低了开发效率。此外，项目的依赖管理也是一项费时费力的工作，我们不仅需要分析要导入哪些库的坐标，还要解决与这些库存在依赖关系的其他库的版本问题。如果依赖版本选择不当，随之而来的不兼容问题会严重影响项目的开发进度。</p>
+<p>为了解决这些问题，Pivotal 团队推出了开源框架 Spring Boot，旨在简化Spring应用的创建和部署。它提供了丰富的 Spring Framework支持，能够帮助开发者快速构建企业级应用。 Spring Boot 通过自动配置功能减少了复杂性，同时支持多种基于JVM的开源框架，缩短了开发时间，使开发变得更加简单和高效。基于“约定优于配置”的理念，Spring Boot 显著减少了我们配置 XML 文件的时间，使得我们能够专注于业务逻辑的编写，从而显著提高了开发效率并缩短了项目周期。</p>
 <h3 id="mybatis-介绍">MyBatis 介绍 </h3>
-<p>MyBatis是一款出色的持久层框架，支持自定义SQL、存储过程和高级映射。它大大简化了JDBC操作，免去了手动编写参数设置和结果集处理的繁琐代码。通过简单的XML配置或注解，MyBatis能够轻松将原始数据类型、接口和Java POJO映射为数据库中的记录。</p>
-<p>与Spring Framework中的Spring Data JPA相比，MyBatis在处理复杂SQL操作上更具优势，特别是在多表联合查询和存储过程调用等场景下。它还允许我们手动优化SQL语句，以提升查询性能，这对处理大量数据的应用尤为关键。自3.x版本以来，MyBatis引入了注解配置方式，进一步简化了映射关系的配置，使开发更加高效。</p>
+<p>MyBatis 是一款出色的持久层框架，支持自定义 SQL、存储过程和高级映射。它大大简化了 JDBC 操作，免去了手动编写参数设置和结果集处理的繁琐代码。通过简单的 XML 配置或注解，MyBatis 能够轻松将原始数据类型、接口和 Java POJO 映射为数据库中的记录。</p>
+<p>与 Spring Framework 中的 Spring Data JPA 相比，MyBatis 在处理复杂 SQL 操作上更具优势，特别是在多表联合查询和存储过程调用等场景下。它还允许我们手动优化 SQL 语句，以提升查询性能，这对处理大量数据的应用尤为关键。自3.x版本以来，MyBatis 引入了注解配置方式，进一步简化了映射关系的配置，使开发更加高效。</p>
 <h3 id="mysql-介绍">MySQL 介绍 </h3>
+<p>MySQL 是一个开源的关系型数据库管理系统，由瑞典的 MySQL AB 公司开发，现隶属于 Oracle 旗下。它将数据保存在不同的表中，而不是将所有数据放在一个大仓库内，这样既提高了数据的存储效率，又增加了速度和灵活性。MySQL 支持大型数据库，可以处理包含上千万条记录的数据，支持 32 位系统下表文件最大 4GB 和 64 位系统下最大 8TB 的表文件。MySQL 使用标准的 SQL 数据语言，并能够在多个操作系统上运行，支持多种编程语言，这使得它成为 Web 程序开发的理想选择。</p>
 <h3 id="vuejs-介绍">Vue.js 介绍 </h3>
 <p>Vue是一款用于构建用户界面的JavaScript框架。它基于标准的HTML、CSS和JavaScript，并额外提供了一套声明式和组件化的编程模型，使我们能够清晰地描述最终输出的HTML与JavaScript状态之间的关系，帮助我们高效地创建用户界面。无论是简单还是复杂的界面，Vue都能胜任。同时，Vue会自动跟踪 JavaScript 状态并在其发生变化时响应式地更新 DOM。</p>
 <p>在传统的前端开发场景下，如果我们想将数据渲染到页面上，需要进行频繁的DOM操作才能达到想要的效果。而作为基于MVVM架构的渐进式框架，Vue.js简化了用户界面与业务逻辑之间的依赖关系，解决了数据频繁更新的问题。MVVM模式有助于将应用程序的业务和表示逻辑与用户界面清晰分离。保持应用程序逻辑和UI之间的清晰分离有助于解决许多开发问题，并使应用程序更易于测试、维护和演变。它还可以显著提高代码重用机会，并允许开发人员和UI设计人员在开发应用各自的部分时更轻松地进行协作。</p>
@@ -190,19 +211,382 @@
 <p>因此，从社会发展与科研文化建设的角度来看，基于Spring Boot的国家自然科学基金数据采集系统的研究与实施不仅具有重要的社会意义，也将为推动科学研究的持续进步与社会发展做出积极贡献。</p>
 <h2 id="需求分析">需求分析 </h2>
 <h3 id="功能需求分析">功能需求分析 </h3>
-<p>本系统采用了B/S架构，用户可以通过浏览器作为客户端与服务器交互。用户在浏览器上进行操作时，会触发浏览器向服务器发送请求。服务器接收到请求后，进行数据处理并返回相应的数据给浏览器。浏览器在接收数据后会将结果进行渲染并展示给用户。<br>
+<p>功能需求分析是对软件系统进行研究、分析，确定其必须做什么、包含哪些操作的需求定义。基于Spring Boot的国家科学基金数据采集系统主要针对国家自然科学基金基础研究知识库数据进行采集、存储与分析。<br>
+本系统采用了B/S架构，用户可以通过浏览器作为客户端与服务器交互。用户在浏览器上进行操作时，会触发浏览器向服务器发送请求。服务器接收到请求后，进行数据处理并返回相应的数据给浏览器。浏览器在接收数据后会将结果进行渲染并展示给用户。<br>
 B/S架构的使用不仅提升了系统的数据管理效率和用户体验，而且显著降低了系统的维护成本，增强了系统的稳定性和安全性，为国家自然科学基金数据采集系统的持续发展提供了稳固的技术支持。其B/S架构如图3.1所示：</p>
-<p><a href="https://mermaid.live/edit#pako:eNqrVkrOT0lVslJSAIK0nPzy5IzEohIFn6CYPAUwcIyOUXq2tf_F8o6nM1fEKMXCxJ1A4nN6n3YtRBV3BolP3fCsd93TXZORxB0VdHU9QkICdHXtFJyA7GeTe5_snQNRCRJzhhsAklzc8HzLIoQkSEOQa3BIWmkOiOuopKOUm1qUm5iZAnR5NUhnjFJJRmpuaoySFZCZkpqWWJpTEqMUk1cLVJpYWpIfXJmXrGRVUlSaqqNUlF-anqFklZaYUwzklRakJJakumQmphcl5sJFCxLzovLzEfzUlMyS_CJfSFiBg6wWAJ6DcO4"><img src="https://mermaid.ink/img/pako:eNqrVkrOT0lVslJSAIK0nPzy5IzEohIFn6CYPAUwcIyOUXq2tf_F8o6nM1fEKMXCxJ1A4nN6n3YtRBV3BolP3fCsd93TXZORxB0VdHU9QkICdHXtFJyA7GeTe5_snQNRCRJzhhsAklzc8HzLIoQkSEOQa3BIWmkOiOuopKOUm1qUm5iZAnR5NUhnjFJJRmpuaoySFZCZkpqWWJpTEqMUk1cLVJpYWpIfXJmXrGRVUlSaqqNUlF-anqFklZaYUwzklRakJJakumQmphcl5sJFCxLzovLzEfzUlMyS_CJfSFiBg6wWAJ6DcO4?type=png" alt=""></a></p>
-<p>该系统主要功能如下：<br>
-（1）数据采集：系统需支持自动化数据采集功能，定期从国家自然科学基金相关网站抓取科研成果信息。通过Selenium技术实现自动化浏览器操作，能够动态获取基金项目的最新信息并存储在数据库中。该模块应支持定时任务的配置，确保数据采集过程能够定时运行，保持数据的实时性。<br>
-（2）数据存储与管理：系统需要支持科研数据的存储和管理，采用MySQL数据库进行数据持久化存储。通过MyBatis框架实现数据库操作，系统能够高效处理大量科研成果数据，并支持数据的分类、标签化管理。科研数据的管理功能还包括数据的增删改查操作，以便用户根据需求对数据进行自定义管理。<br>
-（3）数据查询与检索：系统应具备强大的数据查询与检索功能，支持用户按条件筛选数据，如按时间、研究领域、项目类型等方式进行筛选。该模块应提供灵活的查询接口，方便科研人员快速找到所需数据，提升数据的可访问性和利用效率。<br>
-（4）数据分析与可视化：系统需要提供数据分析与可视化功能，集成ECharts实现科研成果的可视化展示。该模块应能够通过折线图、柱状图、饼图等多种图表展示科研项目的数量、进展、领域分布等数据，帮助科研管理人员掌握科研动态，进行趋势分析，并做出基于数据的决策。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed0.png" alt=""></p>
+<p>本文主要从以下五个方面对国家科学基金数据采集系统进行功能需求分析：<br>
+（1）数据采集功能。该功能要求系统能够自动化地从国家自然科学基金基础研究知识库抓取数据。用户可以指定项目主题、设置抓取的页数等参数，系统将根据这些条件从网站上获取符合要求的项目数据，并将数据存储到用户指定的文件中。数据采集过程中，系统需要提供实时反馈，通知用户数据采集的进度和完成情况。这一功能通过Selenium技术实现浏览器自动化操作，确保动态页面内容也能被有效采集。<br>
+（2）数据存储与管理功能。系统应提供强大的数据存储与管理功能，能够有效管理采集到的科研数据。系统需要支持数据的增、删、改、查功能，确保用户能够灵活地管理数据。同时，由于采集过程中可能遇到无效字符（如特殊字符、空白符、转义字符等），系统应具备文本预处理功能，对采集到的数据进行清洗和格式化，确保数据的完整性和规范性。此功能能够帮助科研人员在数据存储和管理过程中避免数据冗余和错误，提升数据的质量和可靠性。<br>
+（3）数据查询与检索功能。为了满足科研人员对数据高效查询的需求，系统需要提供灵活、快速的查询与检索功能。用户能够根据多个维度（如时间、项目类型、研究领域等）对数据进行筛选，快速定位到所需的数据。查询功能应支持多条件组合查询，用户能够通过输入关键词、选择日期范围、勾选项目类别等方式，方便地筛选和查询相关科研数据。此外，系统应提供高效的查询接口，确保即使数据量庞大时，用户也能在较短时间内获取到查询结果。<br>
+（4）数据分析与可视化功能。为了帮助科研人员更好地理解和分析科研数据，系统需要集成数据分析和可视化模块。通过ECharts等可视化工具，系统能够将科研数据呈现为易于理解的图表，如折线图、柱状图、饼图等。通过这些图表，用户可以直观地看到项目的数量、进展情况、研究领域分布等信息，从而帮助科研人员进行数据分析和科研决策。此外，可视化功能还能够支持自定义图表，满足不同用户的需求，如选择不同维度的数据展示，并根据分析结果调整科研策略。</p>
 <h3 id="系统用例分析">系统用例分析 </h3>
-<p>国家自然科学基金数据采集系统包含数据采集、数据存储与管理、数据查询与检索、数据分析与可视化等模块。系统用例图如图3.2所示</p>
+<p>研究人员可以获取不同关键词的项目数据,对数据进行分析并查看数据的可视化信息。按照功能需求，将整个系统抽象为4个用例。分别是数据采集、数据存储与管理、数据查询与检索和数据分析与可视化。如图3.2所示为本系统总体功能用例图。下面将分别对各个用例进行介绍。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed1.png" alt=""></p>
+<h4 id="数据采集功能">数据采集功能 </h4>
+<p>数据采集主要功能是获取国家自然科学基金基础研究知识库相关项目信息,研究人员可通过设置多个设置项获取知识库中多个项目的数据信息。功能用例如图 3-2 所示。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed2.png" alt=""></p>
+<p>研究人员在数据采集菜单中设置所需要数据的关键词（如“第一性原理计算”）与多个设置项（可选）后启动爬取程序，根据实际需求手动启动或停止获取。功能用例描述如表 3-1 所示。</p>
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>1</th>
+<th>用例名称</th>
+<th>数据采集</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参与者</td>
+<td colspan="3">研究人员</td>
+
+
+</tr>
+<tr>
+<td>用例描述</td>
+<td colspan="3">获取国家自然科学基金数据，并将采集到的数据存入指定数据库。</td>
+
+
+</tr>
+<tr>
+<td>开始条件</td>
+<td colspan="3">研究人员在系统界面中设置好关键词、采集范围等参数，点击“开始采集”按钮。</td>
+
+
+</tr>
+<tr>
+<td>结束条件</td>
+<td colspan="3">点击“停止采集”按钮，采集过程结束，系统停止数据抓取。</td>
+
+
+</tr>
+<tr>
+<td rowspan="5">主要事件流</td>
+<td>参与者动作</td>
+<td colspan="2">系统动作</td>
+
+</tr>
+<tr>
+
+<td>（1）研究人员在系统界面中输入采集关键词，如“第一性原理计算”。</td>
+<td colspan="2">系统显示采集关键词设置界面，并提供输入框供研究人员输入。</td>
+
+</tr>
+<tr>
+
+<td>（2）研究人员设置采集范围（如选择采集的项目数量、领域、时间范围等）</td>
+<td colspan="2">系统显示采集范围设置界面，研究人员根据需求设置各项参数。</td>
+
+</tr>
+<tr>
+
+<td>（3）研究人员点击“开始采集”按钮，启动数据采集任务。</td>
+<td colspan="2">系统根据研究人员设置的参数开始爬取国家自然科学基金的相关项目信息。</td>
+
+</tr>
+<tr>
+
+<td>（4）研究人员在采集过程中可随时点击“停止采集”按钮，停止当前的采集任务。</td>
+<td colspan="2">系统停止当前的数据抓取任务，关闭网络连接并保存已抓取的数据。</td>
+
+</tr>
+<tr>
+<td rowspan="2">异常事件流</td>
+<td>网络通信不佳导致程序结束</td>
+<td colspan="2">系统提示“网络连接失败”，并停止数据采集。研究人员可重新启动采集任务或检查网络状态。</td>
+
+</tr>
+<tr>
+
+<td>数据抓取过程中出现数据格式异常或无法解析的情况</td>
+<td colspan="2">系统提示“数据解析失败”并停止采集。研究人员可选择重新配置采集参数或检查相关数据源。</td>
+
+</tr>
+</tbody>
+</table>
+<h4 id="数据存储与管理功能">数据存储与管理功能 </h4>
+<p>数据存储与管理功能主要负责存储和管理通过数据采集模块抓取到的科研数据。该功能不仅确保数据能够高效、安全地存储，还支持对数据的增、删、改、查等操作。研究人员可根据需要对存储的数据进行管理、修改、删除或进行数据预处理。</p>
+<p>在数据采集完成后，数据将被存储到指定的数据库或文件存储位置。数据存储后，系统提供相应的功能供研究人员进行后续管理。为了提高数据的利用率，系统还支持对无效数据的清洗与规范化操作，以便对科研数据进行更为精细的管理。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed3.png" alt=""></p>
+<p>数据存储与管理模块允许研究人员在采集完成后，对科研数据进行查看、修改、删除等操作。数据也可进行清洗与预处理，删除无效数据或格式化数据，以保证存储的数据符合后续分析要求。</p>
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>2</th>
+<th>用例名称</th>
+<th>数据存储与管理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参与者</td>
+<td colspan="3">研究人员</td>
+
+
+</tr>
+<tr>
+<td>用例描述</td>
+<td colspan="3">对采集到的国家自然科学基金数据进行有效存储，并支持数据的增删改查操作，确保数据的高效管理。</td>
+
+
+</tr>
+<tr>
+<td>开始条件</td>
+<td colspan="3">研究人员已完成数据采集，并进入“数据存储与管理”模块。</td>
+
+
+</tr>
+<tr>
+<td>结束条件</td>
+<td colspan="3">数据存储完毕，数据可以被查询和管理，或数据删除、更新操作完成。</td>
+
+
+</tr>
+<tr>
+<td rowspan="5">主要事件流</td>
+<td>参与者动作</td>
+<td colspan="2">系统动作</td>
+
+</tr>
+<tr>
+
+<td>（1）研究人员选择数据管理操作（如查看、更新、删除等）。</td>
+<td colspan="2">系统根据选择的操作，展示相应的数据管理界面。</td>
+
+</tr>
+<tr>
+
+<td>（2）研究人员在数据管理界面中选择查看某个项目的详细信息，进行数据修改或删除操作。</td>
+<td colspan="2">系统显示所选项目信息，支持修改或删除操作。</td>
+
+</tr>
+<tr>
+
+<td>（3）研究人员提交数据更新或删除请求。</td>
+<td colspan="2">系统对数据进行更新或删除操作，并提示操作结果。</td>
+
+</tr>
+<tr>
+
+<td>（4）研究人员选择“保存数据”按钮，将数据保存到指定数据库或文件中。</td>
+<td colspan="2">系统执行数据清洗操作，移除无效字符、格式错误的记录后，将数据保存至指定位置，并确认操作成功。</td>
+
+</tr>
+<tr>
+<td rowspan="2">异常事件流</td>
+<td>存储空间不足</td>
+<td colspan="2">系统提示“存储空间不足”，并建议选择其他存储位置或清理空间。</td>
+
+</tr>
+<tr>
+
+<td>数据格式错误或存储失败</td>
+<td colspan="2">系统提示“数据存储失败”，并停止数据写入。研究人员可选择重新配置存储参数或检查数据格式。</td>
+
+</tr>
+</tbody>
+</table>
+<h4 id="数据查询与检索功能">数据查询与检索功能 </h4>
+<p>数据查询与检索功能是系统中的核心模块之一，主要用于提供灵活、高效的数据查询接口。研究人员可以根据不同的查询条件，对存储的科研数据进行多维度筛选、搜索和提取。这一功能极大地提高了数据的使用效率，并帮助研究人员快速找到所需的相关数据，以支持进一步的分析与研究。</p>
+<p>该功能支持按时间、项目类型、研究领域等多个维度对数据进行检索，同时也支持条件组合查询，便于用户从大量的科研数据中筛选出最相关的信息。数据查询的结果将以列表或可视化图表的形式展示给研究人员，供其进一步操作和分析。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed4.png" alt=""><br>
+数据查询与检索功能模块允许研究人员对系统中存储的科研数据进行灵活的检索，支持多种查询方式，确保研究人员能够高效地找到所需的数据。</p>
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>3</th>
+<th>用例名称</th>
+<th>数据查询与检索</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参与者</td>
+<td colspan="3">研究人员</td>
+
+
+</tr>
+<tr>
+<td>用例描述</td>
+<td colspan="3">支持研究人员根据不同条件对存储的数据进行查询与检索，提供高效、灵活的搜索接口，帮助研究人员找到所需的科研数据。</td>
+
+
+</tr>
+<tr>
+<td>开始条件</td>
+<td colspan="3">数据已成功存储到系统数据库，且研究人员已进入“数据查询与检索”模块。</td>
+
+
+</tr>
+<tr>
+<td>结束条件</td>
+<td colspan="3">查询结果显示完成，研究人员可以根据需求进行进一步操作（如查看详情、导出等）。</td>
+
+
+</tr>
+<tr>
+<td rowspan="5">主要事件流</td>
+<td>参与者动作</td>
+<td colspan="2">系统动作</td>
+
+</tr>
+<tr>
+
+<td>（1）研究人员选择查询条件（如项目名称、领域、时间范围等），并点击“查询”按钮。</td>
+<td colspan="2">系统根据选择的查询条件执行数据库检索，并返回符合条件的数据列表。</td>
+
+</tr>
+<tr>
+
+<td>（2）研究人员查看查询结果并选择查看详细数据。</td>
+<td colspan="2">系统展示查询结果列表，研究人员可查看每个项目的详细信息。</td>
+
+</tr>
+<tr>
+
+<td>（3）研究人员根据需要进行组合检索或条件筛选，进一步优化查询结果。</td>
+<td colspan="2">系统重新执行查询，并显示符合组合条件的数据。</td>
+
+</tr>
+<tr>
+
+<td>（4）研究人员可导出查询结果或打印报告。</td>
+<td colspan="2">系统提供导出功能（如导出为CSV、Excel等格式），并确认导出成功。</td>
+
+</tr>
+<tr>
+<td rowspan="3">异常事件流</td>
+<td>查询条件无匹配数据</td>
+<td colspan="2">系统提示“没有符合条件的结果”，并提示用户重新设置查询条件。</td>
+
+</tr>
+<tr>
+
+<td>查询过程中出现数据库连接失败</td>
+<td colspan="2">系统提示“数据库连接失败”，并建议用户检查网络或数据库状态。</td>
+
+</tr>
+<tr>
+
+<td>查询条件格式错误（如日期格式不规范）</td>
+<td colspan="2">系统提示“查询条件格式错误”，并提醒用户重新输入符合规范的查询条件。</td>
+
+</tr>
+</tbody>
+</table>
+<h4 id="数据分析与可视化功能">数据分析与可视化功能 </h4>
+<p>数据分析与可视化的主要功能是将项目数据分析后的结果通过动态图表的形式直观地进行展示，功能用例如图所示。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed5.png" alt=""></p>
+<p>研究人员可通过选择不同的分析维度、设置不同的筛选条件来查看数据的可视化图表。功能用例描述如表所示。</p>
+<table>
+<thead>
+<tr>
+<th>用例编号</th>
+<th>4</th>
+<th>用例名称</th>
+<th>数据分析与可视化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>参与者</td>
+<td colspan="3">研究人员</td>
+
+
+</tr>
+<tr>
+<td>用例描述</td>
+<td colspan="3">研究人员通过选择不同的分析维度、筛选条件和查看可视化图表，来对采集到的项目信息进行分析和展示。</td>
+
+
+</tr>
+<tr>
+<td>开始条件</td>
+<td colspan="3">研究人员已完成数据采集，并进入“数据分析与可视化”模块。</td>
+
+
+</tr>
+<tr>
+<td>结束条件</td>
+<td colspan="3">若无新操作覆盖，各操作自行停止</td>
+
+
+</tr>
+<tr>
+<td rowspan="6">主要事件流</td>
+<td>参与者动作</td>
+<td colspan="2">系统动作</td>
+
+</tr>
+<tr>
+
+<td>（1）研究人员选择数据分析维度，如“项目类型”、“部门”、“热门关键词”等。</td>
+<td colspan="2">系统显示可选的维度列表，供研究人员选择。</td>
+
+</tr>
+<tr>
+
+<td>（2）研究人员设置筛选条件，如选择具体的项目类型或研究领域等。</td>
+<td colspan="2">系统根据选择的筛选条件更新分析数据。</td>
+
+</tr>
+<tr>
+
+<td>（3）研究人员点击“查看可视化效果”按钮，开始显示数据分析结果。</td>
+<td colspan="2">系统生成并展示相应的可视化图表，如折线图、柱状图、饼图等。</td>
+
+</tr>
+<tr>
+
+<td>（4）研究人员查看可视化图表，分析数据趋势和分布情况。</td>
+<td colspan="2">系统根据分析维度和筛选条件展示数据的动态图表，支持交互操作（如放大、缩小、查看具体数据点等）。</td>
+
+</tr>
+<tr>
+
+<td>（5）研究人员可随时更改分析维度或筛选条件，系统实时更新数据图表。</td>
+<td colspan="2">系统根据新的维度或筛选条件重新生成并展示数据图表。</td>
+
+</tr>
+<tr>
+<td rowspan="3">异常事件流</td>
+<td>数据加载失败</td>
+<td colspan="2">系统提示“数据加载失败，请检查网络连接或数据源”。</td>
+
+</tr>
+<tr>
+
+<td>数据可视化图表显示不完整或异常</td>
+<td colspan="2">系统提示“图表数据异常，请重试或更改筛选条件”。</td>
+
+</tr>
+<tr>
+
+<td>筛选条件不符合要求或为空</td>
+<td colspan="2">系统提示“筛选条件无效，请选择有效的筛选条件”。</td>
+
+</tr>
+</tbody>
+</table>
 <h3 id="业务流程分析">业务流程分析 </h3>
+<p>该系统主要由四个模块组成，旨在支持研究人员对项目数据的全面管理和分析。研究人员通过数据采集模块输入采集相关信息并获取标注数据，数据随后存储于数据存储与管理模块中，供后续的修改和删除操作。研究人员可以在数据查询与检索模块中根据不同查询条件执行数据查询，并导出查询结果。最后，数据分析与可视化模块允许研究人员根据选定的分析维度和条件，查看数据的可视化效果，帮助深入理解数据背后的趋势和规律。整体流程从数据采集到存储管理，再到查询与分析，构成了一个高效的数据处理和分析体系。系统业务流程如图所示。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed6.png" alt=""></p>
 <h3 id="数据流程分析">数据流程分析 </h3>
+<p>研究人员通过抓取参数与数据采集模块进行交互，采集后的数据会被存储到数据存储与管理模块中。研究人员还可以提供筛选条件给数据查询与检索模块，进而查询筛选后的数据。研究人员可以通过数据分析与可视化模块请求数据分析，分析结果以图表形式展示给研究人员。数据存储模块与管理在系统中扮演着核心角色，负责存储所有采集、修改和筛选后的项目数据，并支持其他模块的查询与数据提供。整个系统的设计旨在通过高效的数据采集、管理、查询、分析和可视化功能，帮助研究人员更好地进行数据处理和分析。系统数据流程如图所示。</p>
+<p><img src="assets/bb61ee50ff48c6c05fdd40746e0c28ed7.png" alt=""></p>
+<h3 id="非功能性需求分析">非功能性需求分析 </h3>
+<p>非功能性需求在系统设计和实现中起着至关重要的作用，它们直接影响系统的稳定性、可靠性、性能以及用户体验等各个方面。在数据采集和处理系统中，非功能性需求同样至关重要，需要在设计初期就加以考虑，以确保系统能够高效、安全、稳定地运行。针对国家自然科学基金数据采集系统，主要的非功能性需求包括：</p>
+<p>（1）性能需求。性能是数据采集系统的基础，直接影响用户体验和系统稳定性。系统需要在保证高吞吐量的同时，确保快速响应时间和高效的资源利用，特别是在处理大量并发请求或海量数据时。此外，系统设计应考虑到负载均衡和优化，确保在各种负载情况下都能维持良好的性能。</p>
+<p>（2）可用性。系统的可用性至关重要，必须保证系统能够持续、稳定地运行，即使在发生故障时也能迅速恢复。通过高可用架构、冗余备份和自动故障转移机制，确保服务不会因单点故障而中断。同时，定期的数据备份和恢复机制也能在出现灾难时保护数据安全，减少系统停机时间。</p>
+<p>（3）可维护性。系统的可维护性要求开发时进行模块化设计，确保后期能够方便地进行监控、调试和维护。日志记录和错误追踪功能是系统健康管理的关键，能帮助开发团队快速定位问题并修复。系统应具备灵活的升级和扩展能力，以应对未来技术发展和需求变化。</p>
+<p>（4）扩展性。系统应具备良好的扩展性，以应对业务增长和数据量增加的需求。通过水平扩展和分布式架构，系统可以根据需要增加处理能力和存储资源。此外，系统设计应允许功能模块的灵活扩展，确保在增加新设备或新功能时不影响现有系统的稳定性。</p>
+<p>（5）用户体验。良好的用户体验直接影响系统的可接受性。系统应提供简洁直观的界面，降低用户操作的复杂性。快速的响应速度和流畅的交互体验能够提高用户的满意度。为了适应不同用户的需求，系统还应支持多平台访问，确保跨设备的一致性体验。</p>
+<p>（6）合规性。合规性要求系统必须遵守相关法律、行业标准及数据保护法规，特别是在处理个人隐私数据时。系统应符合法律法规如中华人民共和国网络安全法》、《中华人民共和国数据安全法》和《中华人民共和国个人信息保护法》，并确保用户数据的合法收集、存储和使用。此外，符合行业标准的安全设计能增加系统的可信度和合规性。</p>
 <h1 id="系统设计">系统设计 </h1>
+<h2 id="系统整体设计">系统整体设计 </h2>
 <h2 id="功能模块设计">功能模块设计 </h2>
 <h3 id="数据采集模块设计">数据采集模块设计 </h3>
 <h3 id="前台主要模块设计">前台主要模块设计 </h3>
@@ -212,16 +596,322 @@ B/S架构的使用不仅提升了系统的数据管理效率和用户体验，�
 <p>本系统使用了多个实体，每个实体含有多个属性。通过实体关系梳理，我们得到了以下实体关系图。由于篇幅有限，部分属性未全部罗列。</p>
 <h3 id="系统e-r图">系统E-R图 </h3>
 <h3 id="数据库表设计">数据库表设计 </h3>
-<p>| 奖励id | Award_ID | bigint | 主键 |<br>
-| 奖励名称 | Book_name | varchar |  |<br>
-| 作者 | Author | varchar |  |<br>
-| 授奖机构 | Award_Agency | varchar |  |<br>
-| 获奖日期 | Award_Date | datetime |  |<br>
-| 浏览次数 | Views | int |  |<br>
-| 奖励类型 | Award_Type | varchar |  |<br>
-| 授奖等级 | Award_Level | varchar |  |<br>
-| 学术检索 | Academic_Index | varchar |  |<br>
-| 所属项目id | Project_ID | varchar |  |</p>
+<p>通过概念结构设计，我们可以得到以下表结构。</p>
+<h4 id="项目表">项目表 </h4>
+<p>该表主要用于存储项目信息，包含项目批准号、申请代码、项目名称、项目负责人、依托单位、研究期限、资助类别、资助经费、项目中文摘要、项目英文摘要、结题摘要和结题报告。</p>
+<p><strong>表 5.1 项目表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>项目id</td>
+<td>Project_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>项目批准号</td>
+<td>Approval_Code</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>申请代码</td>
+<td>Application_Code</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>项目名称</td>
+<td>Project_Name</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>项目负责人</td>
+<td>Project_Leader</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>依托单位</td>
+<td>Affiliated_Unit</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>研究期限</td>
+<td>Research_Period</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>资助类别</td>
+<td>Funding_Category</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>资助经费</td>
+<td>Funding_Amount</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>项目中文摘要</td>
+<td>Project_CN_Abstract</td>
+<td colspan="2">text</td>
+
+</tr>
+<tr>
+<td>项目英文摘要</td>
+<td>Project_EN_Abstract</td>
+<td colspan="2">text</td>
+
+</tr>
+<tr>
+<td>结题摘要</td>
+<td>Final_Abstract</td>
+<td colspan="2">text</td>
+
+</tr>
+<tr>
+<td>结题报告</td>
+<td>Final_Report</td>
+<td colspan="2">varchar</td>
+
+</tr>
+</tbody>
+</table>
+<h4 id="人员表">人员表 </h4>
+<p>该表主要用于存储人员信息，包含姓名、职位和归属单位。</p>
+<p><strong>表 5.2 人员表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>人员id</td>
+<td>Personnel_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>姓名</td>
+<td>Name</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>职位</td>
+<td>Position</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>归属单位</td>
+<td>Affiliated_Unit</td>
+<td colspan="2">varchar</td>
+
+</tr>
+</tbody>
+</table>
+<h4 id="项目-人员表">项目-人员表 </h4>
+<p>该表主要用于存储项目与人员的对应关系。</p>
+<p><strong>表 5.3 项目-人员表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>表id</td>
+<td>Table_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>项目id</td>
+<td>Project_ID</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>参与人id</td>
+<td>Participant_ID</td>
+<td colspan="2">varchar</td>
+
+</tr>
+</tbody>
+</table>
+<h4 id="专利表">专利表 </h4>
+<p>该表主要用于存储专利信息，包含专利名称、作者、专利编号、授权机构、授权日期、浏览次数、授权区域和学术检索。</p>
+<p><strong>表 5.4 专利表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>专利id</td>
+<td>Patent_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>专利名称</td>
+<td>Patent_Name</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>作者</td>
+<td>Author</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>专利编号</td>
+<td>Patent_Number</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>授权机构</td>
+<td>Grant_Agency</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>授权日期</td>
+<td>Grant_Date</td>
+<td colspan="2">datetime</td>
+
+</tr>
+<tr>
+<td>浏览次数</td>
+<td>Views</td>
+<td colspan="2">int</td>
+
+</tr>
+<tr>
+<td>授权区域</td>
+<td>Grant_Region</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>学术检索</td>
+<td>Academic_Index</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>所属项目id</td>
+<td>Project_ID</td>
+<td colspan="2">varchar</td>
+
+</tr>
+</tbody>
+</table>
+<h4 id="奖励表">奖励表 </h4>
+<p>该表主要用于存储奖励信息，包含奖励名称、作者、授奖机构、获奖日期、浏览次数、奖励类型、授奖等级和学术检索。</p>
+<p><strong>表 5.5 奖励表</strong></p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>字段名</th>
+<th>字段类型</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>奖励id</td>
+<td>Award_ID</td>
+<td>bigint</td>
+<td>主键</td>
+</tr>
+<tr>
+<td>奖励名称</td>
+<td>Book_name</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>作者</td>
+<td>Author</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>授奖机构</td>
+<td>Award_Agency</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>获奖日期</td>
+<td>Award_Date</td>
+<td colspan="2">datetime</td>
+
+</tr>
+<tr>
+<td>浏览次数</td>
+<td>Views</td>
+<td colspan="2">int</td>
+
+</tr>
+<tr>
+<td>奖励类型</td>
+<td>Award_Type</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>授奖等级</td>
+<td>Award_Level</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>学术检索</td>
+<td>Academic_Index</td>
+<td colspan="2">varchar</td>
+
+</tr>
+<tr>
+<td>所属项目id</td>
+<td>Project_ID</td>
+<td colspan="2">varchar</td>
+
+</tr>
+</tbody>
+</table>
 <h4 id="专著表">专著表 </h4>
 <p>该表主要用于存储专著信息，包含专著名称、作者、出版社、发表日期、浏览次数、语言、国家、页数范围和学术检索。</p>
 <p><strong>表 5.6 专著表</strong></p>
@@ -244,62 +934,62 @@ B/S架构的使用不仅提升了系统的数据管理效率和用户体验，�
 <tr>
 <td>专著名称</td>
 <td>Book_name</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>作者</td>
 <td>Author</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>出版社</td>
 <td>Publisher</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>发表日期</td>
 <td>Publication_Date</td>
-<td>datetime</td>
-<td></td>
+<td colspan="2">datetime</td>
+
 </tr>
 <tr>
 <td>浏览次数</td>
 <td>Views</td>
-<td>int</td>
-<td></td>
+<td colspan="2">int</td>
+
 </tr>
 <tr>
 <td>语言</td>
 <td>Language</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>国家</td>
 <td>Country</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>页数范围</td>
 <td>Page_Range</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>学术检索</td>
 <td>Academic_Index</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>所属项目id</td>
 <td>Project_ID</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 </tbody>
 </table>
@@ -325,32 +1015,32 @@ B/S架构的使用不仅提升了系统的数据管理效率和用户体验，�
 <tr>
 <td>会议论文名称</td>
 <td>Conference_Paper_Name</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>作者</td>
 <td>Author</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>会议名称</td>
 <td>Conference_Name</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>发表日期</td>
 <td>Publication_Date</td>
-<td>datetime</td>
-<td></td>
+<td colspan="2">datetime</td>
+
 </tr>
 <tr>
 <td>浏览次数</td>
 <td>Views</td>
-<td>int</td>
-<td></td>
+<td colspan="2">int</td>
+
 </tr>
 <tr>
 <td>是否OA</td>
@@ -361,26 +1051,26 @@ B/S架构的使用不仅提升了系统的数据管理效率和用户体验，�
 <tr>
 <td>下载地址</td>
 <td>Download_link</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>下载次数</td>
 <td>Downloads</td>
-<td>int</td>
-<td></td>
+<td colspan="2">int</td>
+
 </tr>
 <tr>
 <td>学术检索</td>
 <td>Academic_Index</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>所属项目id</td>
 <td>Project_ID</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 </tbody>
 </table>
@@ -406,68 +1096,68 @@ B/S架构的使用不仅提升了系统的数据管理效率和用户体验，�
 <tr>
 <td>期刊论文名称</td>
 <td>Journal_Paper_Name</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>作者</td>
 <td>Author</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>doi</td>
 <td>DOI</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>收录情况</td>
 <td>Inclusion_Status</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>期刊名称</td>
 <td>Journal_Name</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>卷</td>
 <td>Volume</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>发表日期</td>
 <td>Publication_Date</td>
-<td>datetime</td>
-<td></td>
+<td colspan="2">datetime</td>
+
 </tr>
 <tr>
 <td>浏览次数</td>
 <td>Views</td>
-<td>int</td>
-<td></td>
+<td colspan="2">int</td>
+
 </tr>
 <tr>
 <td>下载次数</td>
 <td>Downloads</td>
-<td>int</td>
-<td></td>
+<td colspan="2">int</td>
+
 </tr>
 <tr>
 <td>所属学部</td>
 <td>Academic_Division</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>基金项目</td>
 <td>Funding_Project</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>是否OA</td>
@@ -478,20 +1168,20 @@ B/S架构的使用不仅提升了系统的数据管理效率和用户体验，�
 <tr>
 <td>下载地址</td>
 <td>Download_link</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>学术检索</td>
 <td>Academic_Index</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 <tr>
 <td>所属项目id</td>
 <td>Project_ID</td>
-<td>varchar</td>
-<td></td>
+<td colspan="2">varchar</td>
+
 </tr>
 </tbody>
 </table>
@@ -502,7 +1192,7 @@ B/S架构的使用不仅提升了系统的数据管理效率和用户体验，�
 <h3 id="数据展示与查询模块">数据展示与查询模块 </h3>
 <h3 id="数据可视化模块">数据可视化模块 </h3>
 <h1 id="系统测试">系统测试 </h1>
-<h2 id="测试概述">测试概述 </h2>
+<h2 id="测试概述11">测试概述11 </h2>
 <h2 id="测试方法">测试方法 </h2>
 <h2 id="测试用例">测试用例 </h2>
 <h1 id="总结与展望">总结与展望 </h1>
